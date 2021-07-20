@@ -11,7 +11,9 @@
     <h4>To purchase, please contact us via email: pronounlessmedia@gmail.com</h4>
     </center>
     <script>
-      var currentDomain = window.location.hostname
+      const urlSearchParams = new URLSearchParams(window.location.search);
+      const params = Object.fromEntries(urlSearchParams.entries());
+      var currentDomain = params.ref
       document.getElementById("domainname").innerHTML = "We are selling " + currentDomain + " for cheaper than usual resell price.";
     </script>
   </body>
