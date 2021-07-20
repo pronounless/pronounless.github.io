@@ -7,7 +7,11 @@
   <body>
     <center>
     <h1>This domain is for sale!</h1>
-    <h3>Much cheaper than market price.</h3>
+    <h3 id="domainname">We are selling this domain for cheaper than usual resell price.</h3>
     </center>
+    <script>
+      var currentDomain = window.location.hostname
+      document.getElementById("domainname").innerHTML = "We are selling " + currentDomain + " for cheaper than usual resell price.";
+    </script>
   </body>
 </html>
